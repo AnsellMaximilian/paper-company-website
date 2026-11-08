@@ -11,6 +11,12 @@ importers:
       '@our-impact/browser':
         specifier: 0.2.0
         version: 0.2.0
+      '@our-impact/node':
+        specifier: ^0.1.0
+        version: 0.1.0
+      canvas-confetti:
+        specifier: ^1.9.4
+        version: 1.9.4
       lucide-react:
         specifier: ^0.468.0
         version: 0.468.0(react@19.3.0)
@@ -33,6 +39,9 @@ importers:
       '@tailwindcss/turbopack':
         specifier: ^4.1.17
         version: 4.3.5
+      '@types/canvas-confetti':
+        specifier: ^1.9.0
+        version: 1.9.0
       '@types/node':
         specifier: ^20.17.10
         version: 20.19.43
@@ -451,6 +460,10 @@ packages:
     resolution: {integrity: sha512-WLFqZAIKCX5m88uzL1fyUIakcvHCArOY4/BLOhmJxv7oR/8hbBP33F5hhjPRCABUZNLg+g3BkGu+KPZoJsSqhQ==}
     engines: {node: '>=20'}
 
+  '@our-impact/node@0.1.0':
+    resolution: {integrity: sha512-DYzdCDGvxK1FPn26Ak/iG9BdjAiK5Y5IJ0IJAnDfaODsO2/98aWNUZe6IrDBPDFDfZrWyiEoMjQpRsUQq70lvQ==}
+    engines: {node: '>=20.3'}
+
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
@@ -547,6 +560,9 @@ packages:
 
   '@tailwindcss/turbopack@4.3.5':
     resolution: {integrity: sha512-0f0rOTyz4yGtPzpSiIP3ppAaYtMnQbGnEsHPGK4Yy8wNbE4xZWlNPjWtD6oyXvQZTg2N0XF4BZEhfsgvJe889g==}
+
+  '@types/canvas-confetti@1.9.0':
+    resolution: {integrity: sha512-aBGj/dULrimR1XDZLtG9JwxX1b4HPRF6CX9Yfwh3NvstZEm1ZL7RBnel4keCPSqs1ANRu1u2Aoz9R+VmtjYuTg==}
 
   '@types/estree@1.0.10':
     resolution: {integrity: sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==}
@@ -863,6 +879,9 @@ packages:
 
   caniuse-lite@1.0.30001823:
     resolution: {integrity: sha512-TQ5s/djDjNk1axreUW+4rULH+BmdCMLiJkhaXnO5wqivG7tITkSUj4ItIdzqdZHKaXcHAV8dhH3JxOM7/7bwqw==}
+
+  canvas-confetti@1.9.4:
+    resolution: {integrity: sha512-yxQbJkAVrFXWNbTUjPqjF7G+g6pDotOUHGbkZq2NELZUMDpiJ85rIEazVb8GTaAptNW2miJAXbs1BtioA251Pw==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2355,6 +2374,10 @@ snapshots:
 
   '@our-impact/browser@0.2.0': {}
 
+  '@our-impact/node@0.1.0':
+    dependencies:
+      zod: 4.6.7
+
   '@rtsao/scc@1.1.0': {}
 
   '@swc/helpers@0.5.23':
@@ -2428,6 +2451,8 @@ snapshots:
       '@tailwindcss/node': 4.3.5
       '@tailwindcss/oxide': 4.3.5
       tailwindcss: 4.3.5
+
+  '@types/canvas-confetti@1.9.0': {}
 
   '@types/estree@1.0.10': {}
 
@@ -2748,6 +2773,8 @@ snapshots:
   callsites@3.1.0: {}
 
   caniuse-lite@1.0.30001823: {}
+
+  canvas-confetti@1.9.4: {}
 
   chalk@4.1.2:
     dependencies:

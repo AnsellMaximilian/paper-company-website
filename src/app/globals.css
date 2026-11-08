@@ -213,6 +213,30 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 .community-campaign-error { color: var(--red); }
 
+.best-friend-button {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 50;
+  display: inline-flex;
+  min-height: 58px;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 16px;
+  color: #fff;
+  background: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 6px 6px 0 var(--red);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.best-friend-button:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--red); }
+.best-friend-button > svg { flex: none; color: var(--yellow); }
+.best-friend-button > span { display: grid; text-align: left; }
+.best-friend-button strong { font-size: 13px; line-height: 1.1; }
+.best-friend-button small { margin-top: 3px; color: var(--yellow); font-size: 10px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+
 .story-section { padding-block: 110px; background: var(--ink); color: #fff; }
 .story-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 90px; }
 .story-poster { position: relative; min-height: 500px; display: flex; flex-direction: column; justify-content: center; padding: 55px; color: var(--ink); background: var(--yellow); border: 9px solid #fff; box-shadow: 17px 17px 0 var(--red); transform: rotate(-2deg); }
@@ -379,6 +403,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   .section { padding-block: 70px; }
   .community-section { padding-block: 70px; }
   .community-campaign-frame { min-height: 460px; box-shadow: 6px 6px 0 var(--ink); }
+  .best-friend-button { right: 14px; bottom: 14px; min-height: 52px; padding: 9px 13px; }
   .split-heading, .account-cta-inner, .account-hero-inner, .account-heading { align-items: start; flex-direction: column; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card-body > p { min-height: auto; }

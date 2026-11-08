@@ -1,3 +1,4 @@
 packages: []
 minimumReleaseAgeExclude:
   - '@our-impact/browser@0.2.0'
+  - '@our-impact/node@0.1.0'
