@@ -1,5 +1,6 @@
 import { ArrowRight, BadgeCheck, Boxes, Handshake, PhoneCall } from "lucide-react";
 import Link from "next/link";
+import { CommunityCampaign } from "@/components/community-campaign";
 import { ProductArt } from "@/components/product-art";
 import { ProductCard } from "@/components/product-card";
 import { sql } from "@/lib/db";
@@ -69,6 +70,22 @@ export default async function HomePage() {
           <div className="center-action">
             <Link href="/shop" className="button button-outline">Browse all paper <ArrowRight size={18} /></Link>
           </div>
+        </div>
+      </section>
+
+      <section className="community-section" id="community">
+        <div className="site-shell">
+          <div className="community-heading">
+            <div>
+              <span className="eyebrow dark-eyebrow">Michael gives back</span>
+              <h2>You pick where our community support goes.</h2>
+            </div>
+            <p>
+              Vote for a local organization below. When the round closes, we’ll direct
+              our committed funds according to the community’s choices.
+            </p>
+          </div>
+          <CommunityCampaign />
         </div>
       </section>
 

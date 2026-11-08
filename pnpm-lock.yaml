@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@our-impact/browser':
+        specifier: 0.2.0
+        version: 0.2.0
       lucide-react:
         specifier: ^0.468.0
         version: 0.468.0(react@19.3.0)
@@ -443,6 +446,10 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@our-impact/browser@0.2.0':
+    resolution: {integrity: sha512-WLFqZAIKCX5m88uzL1fyUIakcvHCArOY4/BLOhmJxv7oR/8hbBP33F5hhjPRCABUZNLg+g3BkGu+KPZoJsSqhQ==}
+    engines: {node: '>=20'}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -2345,6 +2352,8 @@ snapshots:
       fastq: 1.20.3
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@our-impact/browser@0.2.0': {}
 
   '@rtsao/scc@1.1.0': {}
 

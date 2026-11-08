@@ -21,6 +21,7 @@ export async function SiteHeader() {
         <Brand />
         <nav className="main-nav" aria-label="Main navigation">
           <Link href="/shop">Shop paper</Link>
+          <Link href="/#community">Community</Link>
           <Link href="/#story">Our story</Link>
           <Link href="/#service">Service</Link>
         </nav>
